@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/0b156ad029.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="DIST/css/style.css">
+    <link rel="stylesheet" href="DIST/css/floating-wpp.min.css">
+
+    <script type="text/javascript" src="DIST/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="DIST/js/floating-wpp.min.js"></script>
+
+    <!-- online links -->
+    <!-- Does not work -->
+   <!--  <script type="text/javascript" src="https://github.com/rafaelbotazini/floating-whatsapp/blob/master/floating-wpp.min.js"></script>
+    <script type="text/javascript" src="https://github.com/rafaelbotazini/floating-whatsapp/blob/master/jquery-3.3.1.min.js"></script> -->
+
     <title>Welcome to myTune</title>
 </head>
 <div>
@@ -118,11 +128,27 @@
               <i class="fas fa-chevron-right"></i>Redeem
             </a>
           </div>
+          <div id="myDiv"></div>
+          <script type="text/javascript">
+            $('#myDiv').floatingWhatsApp({
+            phone: '+254705698768',
+            popupMessage: 'Hello, do you wanna listen to musics?',
+            message: "Reply.....",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Welcome!',
+            headerColor: 'crimson',
+            // backgroundColor: 'crimson',
+            
+        });
+
+          </script>
 
         </div>
       </div>
 
     </section>
+    
 
     <!--FOOTER SECTION-->
   <section>
@@ -215,11 +241,9 @@
       </div>
     </footer>
   </section>
-
-
-
-</html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="DIST/js/main.js"></script>   
+  
+   
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="DIST/js/main.js"></script>
 </html>
